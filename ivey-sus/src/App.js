@@ -5,10 +5,15 @@ import Home from './pages/Home';
 import Events from './pages/Events';
 import OurTeam from './pages/OurTeam';
 import NoPage from './pages/NoPage';
+import Header from './Header';
 
 function App() {
   return (
+
     <div>
+
+      <Header></Header>
+
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
