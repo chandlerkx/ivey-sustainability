@@ -6,6 +6,9 @@ import Events from './pages/Events';
 import OurTeam from './pages/OurTeam';
 import NoPage from './pages/NoPage';
 import Header from './Header';
+import { BottomNavigation } from '@mui/material';
+
+
 
 function App() {
   return (
@@ -22,6 +25,8 @@ function App() {
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
+
+      <BottomNavigation label="meow"></BottomNavigation>
     </div>
   );
 }
