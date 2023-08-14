@@ -1,12 +1,20 @@
+import React from 'react';
+import Button from "@mui/material/Button";
+// import { Routes, Route, Link } from 'react-router-dom';
+
+
 const Home = () => {
     return (
 
         <div>
             <img style={{ width: '100%', height: 350 }} src="/testimage.jpg" alt="Ivey Building" />
-            <h2 style={{fontSize: '36px'}}>Providing members with the opportunity to further explore the topic of sustainability through informative events, quality research, and information on relevant careers.</h2>
+            <h2 style={{fontSize: '36px'}}>Providing members with the opportunity to further explore<br/>the topic of sustainability through informative events,<br/>quality research, and information on relevant careers.</h2>
             <div style={{display: 'flex'}}>
                 <div style={{flex: 6}}>
                     <p style={{fontSize: '30px'}}>Helping students realize how sustainability converges with all facets of business. Our hope is to support members as they launch their business careers and arm them with the knowledge necessary to become leaders designed to create positive social and environmental impact.</p>
+                    <br/>
+                    <p style={{fontSize: '32px', fontWeight: 'bold'}}>Interested in getting involved?</p>
+                    <Button style={{color: 'white', backgroundColor: '#202A44'}}>Become a Member</Button>
                 </div>
                 <div style={{flex: 3}}>
 
