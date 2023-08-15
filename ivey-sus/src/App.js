@@ -7,6 +7,7 @@ import OurTeam from './pages/OurTeam';
 import NoPage from './pages/NoPage';
 import Header from './Header';
 import { BottomNavigation } from '@mui/material';
+import Footer from './Footer';
 
 
 
@@ -26,7 +27,7 @@ function App() {
         </Route>
       </Routes>
 
-      <BottomNavigation label="meow"></BottomNavigation>
+      <Footer></Footer>
     </div>
   );
 }
