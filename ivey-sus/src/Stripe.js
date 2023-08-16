@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from './pages/Layout';
 import Home from './pages/Home';
 import { Routes, Route, Link } from 'react-router-dom';
 import Events from './pages/Events';
@@ -15,10 +14,10 @@ import AdbIcon from '@mui/icons-material/Adb';
 export default function Stripe({title, description}){
 
     return(
-        <div style={{backgroundColor: 'green'}}>
-            <div style={{marginLeft: '2%'}}>
-                <p style={{color: 'white'}}>{title}</p>
-                <p>{description}</p>
+        <div style={{backgroundColor: '#125900'}}>
+            <div style={{marginLeft: '3%', padding: '0.001% 0 0.5% 0px'}}>
+                <h1 style={{fontSize: '40px', color: 'white'}}>{title}</h1>
+                <p style={{fontSize: '22px', color: 'white'}}>{description}</p>
             </div>
         </div>
     )

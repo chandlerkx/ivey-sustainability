@@ -5,8 +5,13 @@ import Stripe from '../Stripe';
 const Events = () => {
     return (
         <div>
-            <h1>Events</h1>
-            <Stripe title="test" description="test"></Stripe>
+            <div style={{height: '10px', backgroundColor: 'blue'}}>
+            {/* LINE BREAK  */}
+            </div>
+            <Stripe title="Events" description="A showcase of upcoming events."></Stripe>
+            <div>
+                
+            </div>
         </div>
     )
 };

@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from './pages/Layout';
 import Home from './pages/Home';
 import { Routes, Route, Link } from 'react-router-dom';
 import Events from './pages/Events';
