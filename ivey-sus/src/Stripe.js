@@ -16,8 +16,8 @@ export default function Stripe({title, description}){
 
     return(
         <div style={{backgroundColor: 'green'}}>
-            <div>
-                <p>{title}</p>
+            <div style={{marginLeft: '2%'}}>
+                <p style={{color: 'white'}}>{title}</p>
                 <p>{description}</p>
             </div>
         </div>
