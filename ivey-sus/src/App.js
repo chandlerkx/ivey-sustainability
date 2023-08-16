@@ -9,6 +9,7 @@ import Media from './pages/Media'
 import Contact from './pages/Contact'
 import { BottomNavigation } from '@mui/material';
 import Footer from './Footer';
+import Past from './pages/Past'
 
 
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="ourteam" element={<OurTeam />} />
         <Route path="media" element={<Media/>} />
         <Route path="contact" element={<Contact/>}/>
+        <Route path="past" element={<Past/>} />
         <Route path="*" element={<NoPage />} />
       </Routes>
 
