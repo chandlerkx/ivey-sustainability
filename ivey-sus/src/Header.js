@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from './pages/Layout';
 import Home from './pages/Home';
 import { Routes, Route, Link } from 'react-router-dom';
 import Events from './pages/Events';
@@ -39,7 +38,8 @@ export default function Header(){
           <Button component={Link} to="/" color="inherit">Home</Button>
           <Button component={Link} to="/events" color="inherit">Events</Button>
           <Button component={Link} to="/ourteam" color="inherit">Our Team</Button>
-
+          <Button component={Link} to="/media" color="inherit">Media</Button>
+          <Button component={Link} to="/contact" color="inherit">Contact</Button>
 
         </Toolbar>
       </AppBar>

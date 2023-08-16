@@ -1,11 +1,12 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import Layout from './pages/Layout';
 import Home from './pages/Home';
 import Events from './pages/Events';
 import OurTeam from './pages/OurTeam';
 import NoPage from './pages/NoPage';
 import Header from './Header';
+import Media from './pages/Media'
+import Contact from './pages/Contact'
 import { BottomNavigation } from '@mui/material';
 import Footer from './Footer';
 
@@ -19,12 +20,12 @@ function App() {
       <Header></Header>
 
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="events" element={<Events />} />
-          <Route path="ourteam" element={<OurTeam />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
+        <Route index element={<Home />} />
+        <Route path="events" element={<Events />} />
+        <Route path="ourteam" element={<OurTeam />} />
+        <Route path="media" element={<Media/>} />
+        <Route path="contact" element={<Contact/>}/>
+        <Route path="*" element={<NoPage />} />
       </Routes>
 
       <Footer></Footer>
