@@ -6,7 +6,7 @@ const DropdownMenu= () => {
     return(
         <div className="dropdown-menu">
             <ul>
-                <Button component={Link} to="/events">Upcoming</Button>
+                <Button component={Link} to="/upcoming">Upcoming</Button>
                 <Button component={Link} to="/past">Past</Button>
             </ul>
         </div>

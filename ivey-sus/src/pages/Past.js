@@ -11,7 +11,7 @@ const Events = () => {
             <div style={{height: '10px', backgroundColor: 'white'}}>
             {/* LINE BREAK  */}
             </div>
-            <Stripe title="Events" description="A showcase of upcoming events."></Stripe>
+            <Stripe title="Events" description="A showcase of past events."></Stripe>
             <div>
                 {/* 400 character limit? Just so we don't have scaling issues */}
                 <EventCard imgFile="testimage3.jpg" title="Title" date="June 2, 2022" description={text}></EventCard>
