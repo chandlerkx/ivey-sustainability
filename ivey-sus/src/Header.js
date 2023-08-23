@@ -1,9 +1,5 @@
-import React, {useState} from 'react';
-import Home from './pages/Home';
-import { Routes, Route, Link } from 'react-router-dom';
-import Events from './pages/Events';
-import OurTeam from './pages/OurTeam';
-import NoPage from './pages/NoPage';
+import React from 'react';
+import {Link } from 'react-router-dom';
 import AppBar from "@mui/material/AppBar";
 import IconButton from "@mui/material/IconButton";
 import Toolbar from "@mui/material/Toolbar";
@@ -17,16 +13,6 @@ import DropdownMenu from "./DropdownMenu"
 
 
 export default function Header(){
-
-  const [isDropdownVisible, setDropDownVisible] = useState(false);
-
-  const handleMouseEnter = () => {
-    setDropDownVisible(true);
-  };
-
-  const handleMouseLeave = () => {
-    setDropDownVisible(false);
-  };
 
     return(
         <AppBar style={{ backgroundColor: 'green' }} position="static">
@@ -48,19 +34,7 @@ export default function Header(){
             Ivey Sustainability
           </Typography>
           <Button component={Link} to="/" color="inherit">Home</Button>
-
-
-          <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{ position: 'relative' }}>
-            <Button color="inherit">Events</Button>
-            {isDropdownVisible && (
-            <div
-              style={{position: 'absolute', top: '100%', left: 0, backgroundColor: 'white', boxShadow: '0 0 5px rgba(0, 0, 0, 0.2)'}}
-            >
-              <DropdownMenu />
-            </div>
-          )}
-        </div>
-
+          <DropdownMenu/>
           <Button component={Link} to="/ourteam" color="inherit">Our Team</Button>
           <Button component={Link} to="/media" color="inherit">Media</Button>
           <Button component={Link} to="/contact" color="inherit">Contact</Button>
