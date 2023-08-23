@@ -54,13 +54,7 @@ export default function Header(){
             <Button color="inherit">Events</Button>
             {isDropdownVisible && (
             <div
-              style={{
-                position: 'absolute', // Set absolute positioning
-                top: '100%', // Position below the Events button
-                left: 0, // Align with the Events button
-                backgroundColor: 'white', // Add background color for the dropdown
-                boxShadow: '0 0 5px rgba(0, 0, 0, 0.2)', // Add a box shadow for styling
-              }}
+              style={{position: 'absolute', top: '100%', left: 0, backgroundColor: 'white', boxShadow: '0 0 5px rgba(0, 0, 0, 0.2)'}}
             >
               <DropdownMenu />
             </div>
