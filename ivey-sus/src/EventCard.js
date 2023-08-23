@@ -14,21 +14,16 @@ import AdbIcon from '@mui/icons-material/Adb';
 export default function EventCard({imgFile, title, date, description}){
     
     return(
-        <div style={{display: 'flex', marginTop: '2%', marginBottom: '60px'}}>
-            <div style={{flex:0.25, backgroundColor: 'white'}}>
-
-            </div>
-            <div style={{flex: 3}}>
+        <div style={{display: 'flex'}}>
+            <div style={{flex: 2}}>
                 <img style={{ width: '100%', height: '100%' }} src={imgFile}></img>
             </div>
-            <div style={{flex:0.25, backgroundColor: 'white'}}>
 
-            </div>
-            <div style={{flex: 5, marginRight: '35px'}}>
-                <p style={{overflow: 'clip', backgroundColor: 'white', fontSize: '32px', fontWeight: 'bold', lineHeight: '32px'}}>{title}</p>
-                <p style={{fontSize: '22px', lineHeight: '0px'}}>{date}</p>
-                <p style={{fontSize: '26px', lineHeight: '26px'}}>{description}</p>
-                <Button size="large" style={{ color: 'white', backgroundColor: '#202A44'}}>Register Here</Button>
+            <div style={{flex: 1}}>
+                <p>{title}</p>
+                <p>{date}</p>
+                <p>{description}</p>
+                <Button size="large" style={{ color: 'white', backgroundColor: '#202A44'}}>Register Now</Button>
             </div>
         </div>
     )
