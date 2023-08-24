@@ -22,7 +22,7 @@ export default function EventCard({imgFile, title, date, description}){
             <div style={{flex: 3}}>
                 <img style={{ width: '100%', height: '100%' }} src={imgFile}></img>
             </div>
-            <div style={{flex:0.25, backgroundColor: 'white'}}>
+            <div style={{flex: 0.25, backgroundColor: 'white'}}>
             </div>
             <div style={{flex: 5, marginRight: '35px'}}>
                 <p style={{overflow: 'clip', backgroundColor: 'white', fontSize: '32px', fontWeight: 'bold', lineHeight: '32px'}}>{title}</p>
