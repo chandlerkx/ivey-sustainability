@@ -10,8 +10,8 @@ const Contact = () => {
             <div style={{display: 'flex'}}>
                 <div style={{backgroundColor: 'white', height: '100px', flex: 1}}/>
                 <div style={{backgroundColor: 'green',height: '300px', flex: 6}}> {/*text & fields*/}
-                    <h2>Get in Touch</h2>
-                    <InputField title="hello" subtitle="monkey"></InputField>
+                    <h1>Get in Touch</h1>
+                    <InputField title="First name" subtitle="type here"></InputField>
                 </div>
                 <div style={{backgroundColor: 'blue',height: '100px', flex: 3}}>
 

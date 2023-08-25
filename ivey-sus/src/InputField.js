@@ -15,9 +15,9 @@ import TextField from '@mui/material/TextField';
 
 export default function InputField({title, subtitle}){
     return(
-        <div>
-            <h3>{title}</h3>
-            <TextField style={{fontSize: "40px"}} margin="dense" size="small" id="filled-basic" variant="filled" placeholder={subtitle}/>
+        <div style={{backgroundColor: 'orange'}}>
+            <p style={{marginBottom: '5px', marginLeft: '10px', fontWeight: 'bold', fontSize: "24px", backgroundColor: 'cyan', lineHeight: "28px"}}>{title}</p>
+            <TextField style={{padding: "0px 0px 0px 0px", lineHeight: '30px', fontSize: "40px"}} margin="none" size="small" id="filled-basic" variant="filled" placeholder={subtitle}/>
         </div>
     )
 }
