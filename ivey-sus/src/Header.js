@@ -15,9 +15,9 @@ import DropdownMenu from "./DropdownMenu"
 export default function Header(){
 
     return(
-        <AppBar style={{ backgroundColor: 'green' }} position="static">
+        <AppBar style={{ backgroundColor: 'white' }} position="static">
         <Toolbar>
-        <IconButton
+        <IconButton 
             size="large"
             edge="start"
             color="inherit"
@@ -26,18 +26,18 @@ export default function Header(){
           >
         </IconButton>
 
-        <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+        <AdbIcon sx={{ color:'black', display: { xs: 'none', md: 'flex' }, mr: 1 }} />
 
 
-        <Typography variant="h14" 
+        <Typography style={{color:'black'}} variant="h14" 
             component="div" sx={{ flexGrow: 1 }}>
             Ivey Sustainability
           </Typography>
-          <Button component={Link} to="/" color="inherit">Home</Button>
+          <Button style={{color:'black'}} component={Link} to="/" color="inherit">Home</Button>
           <DropdownMenu/>
-          <Button component={Link} to="/ourteam" color="inherit">Our Team</Button>
-          <Button component={Link} to="/media" color="inherit">Media</Button>
-          <Button component={Link} to="/contact" color="inherit">Contact</Button>
+          <Button style={{color:'black'}} component={Link} to="/ourteam" color="inherit">Our Team</Button>
+          <Button style={{color:'black'}} component={Link} to="/media" color="inherit">Media</Button>
+          <Button style={{color:'black'}} component={Link} to="/contact" color="inherit">Contact</Button>
 
         </Toolbar>
       </AppBar>
