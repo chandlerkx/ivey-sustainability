@@ -6,7 +6,7 @@ const OurTeam = () => {
     return(
         <div>
             <Stripe title="Our Team" description="Meet the 2023/2024 Ivey MSc Sustainability Club Executive Team!"></Stripe>
-            <div style={{marginLeft:'6%',display:'flex', flexWrap:'wrap'}}>
+            <div style={{marginLeft:'6%',display:'flex', flexWrap:'wrap', alignItems:'center',justifyContent:'center'}}> 
                 <TeamCard 
                 imgFile="testimage3.jpg" 
                 name="kyle guazman" 
