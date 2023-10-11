@@ -1,6 +1,6 @@
 import React from 'react';
-import Stripe from '../Stripe';
-import EventCard from '../EventCard';
+import Stripe from '../components/Stripe';
+import EventCard from '../components/EventCard';
 
 
 const Events = () => {

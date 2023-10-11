@@ -1,6 +1,6 @@
 import { Button } from '@mui/material';
-import Stripe from '../Stripe'
-import TeamCard from '../TeamCard'
+import Stripe from '../components/Stripe'
+import TeamCard from '../components/TeamCard'
 
 const OurTeam = () => {
     return(

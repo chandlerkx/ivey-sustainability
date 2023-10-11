@@ -4,12 +4,13 @@ import Home from './pages/Home';
 import Events from './pages/Events';
 import OurTeam from './pages/OurTeam';
 import NoPage from './pages/NoPage';
-import Header from './Header';
+import Header from './components/Header';
 import Media from './pages/Media'
 import Contact from './pages/Contact'
 import { BottomNavigation } from '@mui/material';
-import Footer from './Footer';
+import Footer from './components/Footer';
 import Past from './pages/Past'
+import './styles/App.css'
 
 
 

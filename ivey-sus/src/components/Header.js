@@ -8,10 +8,6 @@ import Typography from "@mui/material/Typography";
 import AdbIcon from '@mui/icons-material/Adb';
 import DropdownMenu from "./DropdownMenu"
 
-
-
-
-
 export default function Header(){
 
     return(
