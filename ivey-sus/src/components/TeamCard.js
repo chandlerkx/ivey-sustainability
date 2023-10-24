@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function TeamCard({imgFile, name, role, emailLink, linkedinLink}){
     return(
-        <div style={{backgroundColor: 'white', display: 'block',padding:'5.7rem',paddingBottom:'0',paddingTop:'4rem'}}>
+        <div style={{backgroundColor: 'white', display: 'block',padding:'2.5rem',paddingBottom:'0',paddingTop:'0rem'}}>
             <div style={{backgroundColor:'white', width: '200px'}}>
                 <img style={{maxWidth: "300px", height: "300px"}} src={imgFile}></img>
             </div>
