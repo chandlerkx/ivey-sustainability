@@ -43,20 +43,20 @@ const Media = () => {
                         <div className="social-container-one">
                             <h2>Instagram</h2>
                             <div style={{backgroundColor:"lightgray", width:"25rem", height:"40rem"}}></div>
-                            <Button size="large" style={{margin:"0 auto", display:"block", marginTop:"8%",textTransform:"none", color: 'white', backgroundColor: '#2F4858',fontSize:"1rem", fontFamily:"Nunito Sans", borderRadius:"0.4rem", paddingLeft:"2rem", paddingRight:"2rem", marginBottom:"10%"}}>Read Our Blog</Button>
+                            <Button size="large" style={{margin:"0 auto", display:"block", marginTop:"8%",textTransform:"none", color: 'white', backgroundColor: '#2F4858',fontSize:"1rem", fontFamily:"Nunito Sans", borderRadius:"0.4rem", paddingLeft:"2rem", paddingRight:"2rem", marginBottom:"10%"}}>Follow Us</Button>
                         </div>
                     </div>
 
-                    <div style={{padding:"9rem"}}></div>
-
-                    <div style={{display:"flex"}}>
+                    <div className="social-display-container-two">
                         <div>
-                            <h2 style={{textAlign:"center"}}>LinkedIn</h2>
+                            <h2>LinkedIn</h2>
                             <div style={{backgroundColor:"lightgray", width:"25rem", height:"40rem"}}></div>
                             <Button size="large" style={{margin:"0 auto", display:"block", marginTop:"8%",textTransform:"none", color: 'white', backgroundColor: '#2F4858',fontSize:"1rem", fontFamily:"Nunito Sans", borderRadius:"0.4rem", paddingLeft:"2rem", paddingRight:"2rem", marginBottom:"10%"}}>Follow Us</Button>
                         </div>
                     </div>
+
                 </div>
+
             </div>
             
         </div>
