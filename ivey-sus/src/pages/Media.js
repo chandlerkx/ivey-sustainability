@@ -14,7 +14,7 @@ const Media = () => {
                 <div className="content">
                     <h1>In today's world, it's more important than ever for companies to prioritize sustainable practices.</h1>
                     <p>Join us as we explore the latest trends, ideas, and solutions for improving corporate sustainability.</p>
-                    <Button size="large" style={{textTransform:"none", color: 'white', backgroundColor: '#2F4858',fontSize:"1.2rem", fontFamily:"Nunito Sans", borderRadius:"0.4rem", paddingLeft:"2rem", paddingRight:"2rem"}}>Read Our Blog</Button>
+                    <Button size="large" style={{textTransform:"none", color: 'white', backgroundColor: '#51694B',fontSize:"1.2rem", fontFamily:"Nunito Sans", borderRadius:"0.4rem", paddingLeft:"2rem", paddingRight:"2rem"}}>Read Our Blog</Button>
                 </div>
                 <div className="image-container">
                     <img src="testimage3.jpg"></img>
@@ -43,7 +43,7 @@ const Media = () => {
                         <div className="social-container-one">
                             <h2>Instagram</h2>
                             <div style={{backgroundColor:"lightgray", width:"25rem", height:"40rem"}}></div>
-                            <Button size="large" style={{margin:"0 auto", display:"block", marginTop:"8%",textTransform:"none", color: 'white', backgroundColor: '#2F4858',fontSize:"1rem", fontFamily:"Nunito Sans", borderRadius:"0.4rem", paddingLeft:"2rem", paddingRight:"2rem", marginBottom:"10%"}}>Follow Us</Button>
+                            <Button size="large" style={{margin:"0 auto", display:"block", marginTop:"8%",textTransform:"none", color: 'white', backgroundColor: '#51694B',fontSize:"1rem", fontFamily:"Nunito Sans", borderRadius:"0.4rem", paddingLeft:"2rem", paddingRight:"2rem", marginBottom:"10%"}}>Follow Us</Button>
                         </div>
                     </div>
 
@@ -51,7 +51,7 @@ const Media = () => {
                         <div>
                             <h2>LinkedIn</h2>
                             <div style={{backgroundColor:"lightgray", width:"25rem", height:"40rem"}}></div>
-                            <Button size="large" style={{margin:"0 auto", display:"block", marginTop:"8%",textTransform:"none", color: 'white', backgroundColor: '#2F4858',fontSize:"1rem", fontFamily:"Nunito Sans", borderRadius:"0.4rem", paddingLeft:"2rem", paddingRight:"2rem", marginBottom:"10%"}}>Follow Us</Button>
+                            <Button size="large" style={{margin:"0 auto", display:"block", marginTop:"8%",textTransform:"none", color: 'white', backgroundColor: '#51694B',fontSize:"1rem", fontFamily:"Nunito Sans", borderRadius:"0.4rem", paddingLeft:"2rem", paddingRight:"2rem", marginBottom:"10%"}}>Follow Us</Button>
                         </div>
                     </div>
 
