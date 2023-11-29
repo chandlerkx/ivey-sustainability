@@ -1,4 +1,6 @@
 import React from 'react';
+import MailIcon from '../icons/mail.png';
+import LinkedinIcon from '../icons/linkedin.png';
 
 export default function TeamCard({imgFile, name, role, emailLink, linkedinLink}){
     return(
@@ -10,10 +12,10 @@ export default function TeamCard({imgFile, name, role, emailLink, linkedinLink})
                 <p style={{fontWeight: 'bold', fontSize:'2rem',fontFamily:'Arial'}}>{name}</p>
                 <p style={{lineHeight:'0px', fontSize:'1.8rem', fontFamily:'Arial'}}>{role}</p>
                 <a href={emailLink} target="_blank">
-                    <img src="black-gmail-icon.png" style={{maxWidth:'1.7rem'}}/>
+                    <img src={MailIcon}/>
                 </a>
-                <a style={{marginLeft:"0.5%"}}href={linkedinLink} target="_blank">
-                    <img src="black-linkedin-icon.png" style={{maxWidth:'1.9rem'}}/>
+                <a style={{marginLeft:"3%"}}href={linkedinLink} target="_blank">
+                    <img src={LinkedinIcon}/>
                 </a>
             </div>
         </div>
