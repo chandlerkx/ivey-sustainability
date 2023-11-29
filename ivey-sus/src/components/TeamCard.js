@@ -4,7 +4,7 @@ import LinkedinIcon from '../icons/linkedin.png';
 
 export default function TeamCard({imgFile, name, role, emailLink, linkedinLink}){
     return(
-        <div style={{backgroundColor: 'white', display: 'block',padding:'2.5rem',paddingBottom:'0',paddingTop:'5rem'}}>
+        <div style={{backgroundColor: 'white', display: 'block',padding:'2rem',paddingBottom:'0',paddingTop:'8%'}}>
             <div style={{backgroundColor:'white'}}>
                 <img src={imgFile}></img>
             </div>
