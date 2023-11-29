@@ -1,0 +1,157 @@
+
+
+.container {
+    background-color: white;
+}
+
+/* first container */ 
+.section {
+    display: flex;
+    background-color: white;
+}
+
+.content {
+    flex: 2;
+    flex-direction: column;
+    margin-top: 7%;
+    margin-left: 5%;
+}
+
+.content h1 {
+    font-size: 3.5rem;
+    background-color: white;
+    color: #104702;
+    font-weight: 600;
+}
+
+.content p {
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    max-width: 50rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.image-container {
+    flex: 1.8;
+    background-color: white;
+    height: 45rem;
+    margin-top: 3.5%;
+    margin-left: 3%;
+    margin-bottom: 3.5%;
+}
+
+.image-container img {
+    width: 87.7%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* second container */ 
+.dark-section {
+    background-color: #51694B;
+    display: flex;
+}
+
+.dark-content{
+    flex:2;
+    flex-direction:column;
+    margin-top:7%;
+    margin-left:5%;
+}
+
+.dark-content h1 {
+    font-size: 3.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.dark-content p {
+    color: white;
+    flex-direction:column;
+    margin-top:3%;
+    margin-bottom:3%;
+    max-width:50rem;
+    font-size:1.75rem;
+    font-weight:600;
+}
+
+.dark-image-container {
+    flex:1.8;
+    background-color:#51694B;
+    height:45rem;
+    margin-top:3.5%;
+    margin-left:3%;
+    margin-bottom:3.5%;
+}
+
+.dark-image-container img {
+    width:87.7%;
+    height:100%;
+    align-items:center;
+    justify-content:center;
+}
+
+/* third container */ 
+
+.social-section h1 {
+    max-width: 45rem;
+    margin-left: 2%;
+    color: #2F4858;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-box {
+    display: flex;
+}
+
+.social-box h2 {
+    text-align: center;
+}
+
+.social-media {
+    background-color: lightgray;
+    width: 25rem;
+    height: 40rem;
+}
+
+/* third container */ 
+.third-container h1 {
+    max-width:45rem;
+    margin-left:2%;
+    color:#104702;
+}
+
+.social-items-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+.social-display-container-one{
+    display:flex;
+}
+
+.social-container-one h2 {
+    text-align:center;
+}
+
+.social-display-container-two{
+    display:flex;
+}
+
+.social-display-container-two h2{
+    text-align:center;
+}
+
+
+
+
+/* Add more styles as needed */

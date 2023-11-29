@@ -6,7 +6,7 @@ const OurTeam = () => {
     return(
         <div>
             <Stripe title="Our Team" description="Meet the 2023/2024 Ivey MSc Sustainability Club Executive Team!"></Stripe>
-            <div style={{marginLeft:'6%',display:'flex', flexWrap:'wrap', alignItems:'center',justifyContent:'center'}}> 
+            <div style={{display:'flex',justifyContent:"center", paddingTop:"2rem", alignItems:"center"}}> 
                 <TeamCard 
                 imgFile="testimage3.jpg" 
                 name="kyle guazman" 
@@ -37,6 +37,9 @@ const OurTeam = () => {
                 emailLink="https://mail.google.com/mail/u/0/" 
                 linkedinLink="https://www.linkedin.com/"
                 />
+            </div>
+                
+            <div style={{paddingTop:"2rem", justifyContent:"center", display:"flex"}}>
                 <TeamCard 
                 imgFile="testimage3.jpg" 
                 name="kyle guazman" 
@@ -58,7 +61,6 @@ const OurTeam = () => {
                 emailLink="https://mail.google.com/mail/u/0/" 
                 linkedinLink="https://www.linkedin.com/"
                 />
-
                 <TeamCard 
                 imgFile="testimage3.jpg" 
                 name="kyle guazman" 
@@ -66,8 +68,6 @@ const OurTeam = () => {
                 emailLink="https://mail.google.com/mail/u/0/" 
                 linkedinLink="https://www.linkedin.com/"
                 />
-
-
             </div>
             <div style={{backgroundColor:'white', display:'flex', flexDirection:'column',justifyContent:'center', alignItems:'center', padding:'4rem', paddingTop:'3rem'}}>
                 <p style={{fontWeight:'bold', fontFamily:'Arial', fontSize:'1.9rem', lineHeight:'0', paddingBottom:'1rem'}}>Interested in joining the executive team?</p>
