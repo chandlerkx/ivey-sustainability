@@ -1,74 +1,70 @@
 import { Button } from '@mui/material';
 import Stripe from '../components/Stripe'
 import TeamCard from '../components/TeamCard'
+import Kyle from '../images/Kyle.png';
+
 
 const OurTeam = () => {
     return(
         <div>
             <Stripe title="Our Team" description="Meet the 2023/2024 Ivey MSc Sustainability Club Executive Team!"></Stripe>
-            <div style={{display:'flex',justifyContent:"center", paddingTop:"2rem", alignItems:"center"}}> 
+
+
+            <div style={{display:'flex', flexWrap:'wrap', justifyContent:"center", paddingTop:"2rem", alignItems:"center"}}> 
+
                 <TeamCard 
-                imgFile="testimage3.jpg" 
-                name="kyle guazman" 
-                role="president" 
+                    imgFile={Kyle}
+                    name="Kyle Edmonds" 
+                    role="Co-President" 
+                    emailLink="https://mail.google.com/mail/u/0/" 
+                    linkedinLink="https://www.linkedin.com/"
+                />
+
+                <TeamCard 
+                    imgFile={Kyle}
+                    name="Kyle Edmonds" 
+                    role="Co-President" 
+                    emailLink="https://mail.google.com/mail/u/0/" 
+                    linkedinLink="https://www.linkedin.com/"
+                />
+
+                <TeamCard 
+                imgFile={Kyle}
+                name="Kyle Edmonds" 
+                role="Co-President" 
                 emailLink="https://mail.google.com/mail/u/0/" 
                 linkedinLink="https://www.linkedin.com/"
                 />
 
                 <TeamCard 
-                imgFile="testimage3.jpg" 
-                name="kyle guazman" 
-                role="president" 
+                imgFile={Kyle}
+                name="Kyle Edmonds" 
+                role="Co-President" 
                 emailLink="https://mail.google.com/mail/u/0/" 
                 linkedinLink="https://www.linkedin.com/"
                 />
-                
+
                 <TeamCard 
-                imgFile="testimage3.jpg" 
-                name="kyle guazman" 
-                role="president" 
+                imgFile={Kyle}
+                name="Kyle Edmonds" 
+                role="Co-President" 
                 emailLink="https://mail.google.com/mail/u/0/" 
                 linkedinLink="https://www.linkedin.com/"
                 />
+
                 <TeamCard 
-                imgFile="testimage3.jpg" 
-                name="kyle guazman" 
-                role="president" 
+                imgFile={Kyle}
+                name="Kyle Edmonds" 
+                role="Co-President" 
                 emailLink="https://mail.google.com/mail/u/0/" 
                 linkedinLink="https://www.linkedin.com/"
                 />
-            </div>
-                
-            <div style={{paddingTop:"2rem", justifyContent:"center", display:"flex"}}>
-                <TeamCard 
-                imgFile="testimage3.jpg" 
-                name="kyle guazman" 
-                role="president" 
-                emailLink="https://mail.google.com/mail/u/0/" 
-                linkedinLink="https://www.linkedin.com/"
-                />
-                <TeamCard 
-                imgFile="testimage3.jpg" 
-                name="kyle guazman" 
-                role="president" 
-                emailLink="https://mail.google.com/mail/u/0/" 
-                linkedinLink="https://www.linkedin.com/"
-                />
-                <TeamCard 
-                imgFile="testimage3.jpg" 
-                name="kyle guazman" 
-                role="president" 
-                emailLink="https://mail.google.com/mail/u/0/" 
-                linkedinLink="https://www.linkedin.com/"
-                />
-                <TeamCard 
-                imgFile="testimage3.jpg" 
-                name="kyle guazman" 
-                role="president" 
-                emailLink="https://mail.google.com/mail/u/0/" 
-                linkedinLink="https://www.linkedin.com/"
-                />
-            </div>
+            
+
+
+        </div>
+
+            {/*second container*/}
             <div style={{backgroundColor:'white', display:'flex', flexDirection:'column',justifyContent:'center', alignItems:'center', padding:'4rem', paddingTop:'3rem'}}>
                 <p style={{fontWeight:'bold', fontFamily:'Arial', fontSize:'1.9rem', lineHeight:'0', paddingBottom:'1rem'}}>Interested in joining the executive team?</p>
                 <a href="https://docs.google.com/forms/u/0/" target='_blank'>
