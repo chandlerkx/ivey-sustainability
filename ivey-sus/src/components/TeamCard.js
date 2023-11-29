@@ -4,13 +4,13 @@ import LinkedinIcon from '../icons/linkedin.png';
 
 export default function TeamCard({imgFile, name, role, emailLink, linkedinLink}){
     return(
-        <div style={{backgroundColor: 'white', display: 'block',padding:'2rem',paddingBottom:'0',paddingTop:'8%'}}>
+        <div style={{backgroundColor: 'white', display: 'block',padding:'2rem',paddingBottom:'0',paddingTop:'0'}}>
             <div style={{backgroundColor:'white'}}>
                 <img src={imgFile}></img>
             </div>
             <div style={{}}>
-                <p style={{fontWeight: 'bold', fontSize:'2rem',fontFamily:'Arial'}}>{name}</p>
-                <p style={{lineHeight:'0px', fontSize:'1.8rem', fontFamily:'Arial'}}>{role}</p>
+                <p style={{fontWeight: 'bold', fontSize:'2rem',fontFamily:'Arial',color:'#104702'}}>{name}</p>
+                <p style={{fontWeight:'700',lineHeight:'0', fontSize:'1.6rem', fontFamily:'Arial', color:'#374A1D'}}>{role}</p>
                 <a href={emailLink} target="_blank">
                     <img src={MailIcon}/>
                 </a>

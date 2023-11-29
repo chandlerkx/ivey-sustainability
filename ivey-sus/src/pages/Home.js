@@ -8,7 +8,7 @@ const Home = () => {
     return (
 
         <div>
-            <img style={{ width: '100%', height: 350 }} src="/testimage.jpg" alt="Ivey Building" />
+            <img style={{ width: '100%', height: '100%'}} src="/images/iveybuilding.png" alt="Ivey Building" />
             <h2 style={{marginLeft: '3%', fontSize: '36px'}}>Providing members with the opportunity to further explore<br/>the topic of sustainability through informative events,<br/>quality research, and information on relevant careers.</h2>
             <div style={{display: 'flex', marginLeft: '3%'}}>
                 <div style={{flex: 6}}>
