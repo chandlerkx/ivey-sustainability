@@ -25,19 +25,19 @@ const DropdownMenu = () => {
     return (
         <div className="dropdown-menu" onMouseLeave={handleMouseLeave}>
             <Button style={{color:'black'}} color="inherit" onMouseEnter={handleMouseEnter}>
-                Events
+                <Link to="/upcoming" style={{textDecoration:'none', color:'black'}}>Events</Link>
             </Button>
             {isDropdownVisible && (
                 <div
                     onMouseEnter={handleSubMenuMouseEnter}
-                    style={{ position: "absolute", backgroundColor: "white", marginTop: "0.9rem" }}
+                    style={{ position: "absolute", backgroundColor: "white"}}
                 >
-                    <ul style={{ listStyle: "none", padding: "1rem", margin: "0" }}>
-                        <li>
-                            <Link to="/upcoming">Upcoming</Link>
+                    <ul style={{ listStyle: "none", padding: "1rem"}}>
+                        <li style={{paddingBottom:'1rem'}}>
+                            <Link style={{fontFamily:'Arial', textDecoration:'none',color:'black'}} to="/upcoming">Upcoming</Link>
                         </li>
                         <li>
-                            <Link to="/past">Past</Link>
+                            <Link style={{textDecoration:'none',fontFamily:'Arial',color:'black'}}to="/past">Past</Link>
                         </li>
                     </ul>
                 </div>

@@ -1,4 +1,7 @@
-
+*{
+    padding:0;
+    margin:0;
+  }
 
 .container {
     background-color: white;
@@ -96,43 +99,18 @@
 
 /* third container */ 
 
-.social-section h1 {
+.third-container h1{
     max-width: 45rem;
-    margin-left: 2%;
-    color: #2F4858;
-}
-
-.social-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.social-box {
-    display: flex;
-}
-
-.social-box h2 {
-    text-align: center;
-}
-
-.social-media {
-    background-color: lightgray;
-    width: 25rem;
-    height: 40rem;
-}
-
-/* third container */ 
-.third-container h1 {
-    max-width:45rem;
-    margin-left:2%;
-    color:#104702;
+    margin-left: 2.3%;
+    color: #104702;
+    margin-top:2.5%;
 }
 
 .social-items-container{
     display:flex;
     flex-direction:row;
     justify-content:space-around;
+    padding-top:3%;
 }
 
 .social-display-container-one{
@@ -141,6 +119,7 @@
 
 .social-container-one h2 {
     text-align:center;
+    padding-bottom:5.8%;
 }
 
 .social-display-container-two{
@@ -149,9 +128,5 @@
 
 .social-display-container-two h2{
     text-align:center;
+    padding-bottom:5.8%;
 }
-
-
-
-
-/* Add more styles as needed */

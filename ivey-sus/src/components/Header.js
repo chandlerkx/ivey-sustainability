@@ -22,12 +22,14 @@ export default function Header(){
           >
         </IconButton>
 
-        <AdbIcon sx={{ color:'black', display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+        {/*<AdbIcon sx={{ color:'black', display: { xs: 'none', md: 'flex' }, mr: 1 }} />*/}
+        <IconButton edge="start" color="inherit" aria-label="menu" sx={{mr:2}}>
+          <img style={{}}src='../images/Logo.png' component={Link} to="/home"></img>
+        </IconButton>
 
 
         <Typography style={{color:'black'}} variant="h14" 
             component="div" sx={{ flexGrow: 1 }}>
-            Ivey Sustainability
           </Typography>
           <Button style={{color:'black'}} component={Link} to="/" color="inherit">Home</Button>
           <DropdownMenu/>
