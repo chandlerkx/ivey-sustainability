@@ -12,6 +12,23 @@ export default function TeamCard({ imgFile, name, role, emailLink, linkedinLink,
             >
                 <div style={{paddingRight:'3rem'}}>
                     <img src={imgFile} alt={name} style={{width:'100%', height:'auto', filter: isHovered ? 'blur(5px)' : 'none', transition: 'filter 0.1s'}}></img>
+                    {isHovered && (
+        <div 
+            style={{
+                position: 'absolute', 
+                bottom: 0, // Adjust the vertical position as needed
+                left: 0, 
+                width: '100%', 
+                padding: '1rem', // Add padding for better visibility
+                boxSizing: 'border-box',
+                color: 'white', // Set text color
+                fontSize: '1.5rem', // Set font size
+                backgroundColor: 'rgba(0, 0, 0, 0.7)', // Set background color with some transparency
+            }}
+        >
+            Your overlay text here
+        </div>
+    )}
                 </div>
             </div>
                 <div style={{}}>
