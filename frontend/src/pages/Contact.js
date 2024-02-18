@@ -16,9 +16,9 @@ const Contact = () => {
                 <div style={{marginTop: "2%", backgroundColor: 'white',height: '600px', flex: 6}}> {/*text & fields*/}
                     <p style={{fontSize: "2.3rem", fontWeight: "bolder", color: "#104702"}}>Get in Touch</p>
                     <div style={{marginTop: "3.5%", marginBottom: "1%", backgroundcolor: 'white', display: 'inline-flex', justifyContent: 'space-between'}}>
-                    <TextField id="standard-helperText" label="First name" defaultValue="type here" variant="outlined"/>
+                    <TextField id="standard-helperText" label="First name" defaultValue="First name" variant="outlined"/>
                         <div style={{width: '100px'}}></div>
-                        <TextField id="standard-helperText" label="Last name" defaultValue="type here" variant="outlined"/>
+                        <TextField id="standard-helperText" label="Last name" defaultValue="Last name" variant="outlined"/>
                     </div>
                     <div style={{marginTop: "1.5%", marginBottom: "0.5%", width: "51.1%"}}>
                         <TextField id="standard-helperText" fullWidth label="Email" defaultValue="address@company.com" variant="outlined"/>
