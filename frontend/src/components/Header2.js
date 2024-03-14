@@ -43,7 +43,7 @@ function Header2() {
     <AppBar position="static" sx={{backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        position: 'relative'}}>
+        position: 'relative',}}>
       <Container maxWidth="xl" >
         <Toolbar disableGutters>
           
