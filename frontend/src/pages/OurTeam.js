@@ -27,7 +27,7 @@ const OurTeam = () => {
                         role="Co-President" 
                         emailLink="https://mail.google.com/mail/u/0/" 
                         linkedinLink="https://www.linkedin.com/"
-                        description=""
+                        description="hello my name is __ and im studying __ at western university i am enjoying my time here pleas work box "
                     />
                     <TeamCard 
                         imgFile='/images/Shrinjal.png'
@@ -35,7 +35,7 @@ const OurTeam = () => {
                         role="VP Marketing" 
                         emailLink="https://mail.google.com/mail/u/0/" 
                         linkedinLink="https://www.linkedin.com/"
-                        description=""
+                        description="hi guys my name jeff"
                     />
                     <TeamCard 
                         imgFile='/images/Megan.png'
