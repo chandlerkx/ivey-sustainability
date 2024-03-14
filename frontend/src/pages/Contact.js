@@ -9,7 +9,7 @@ import { Email , Place} from "@mui/icons-material"
 const Contact = () => {
     return (
         <div>
-            <div style={{height: '10px', backgroundColor: 'white'}}/>
+            <div style={{height: '0px', backgroundColor: 'white'}}/>
             <Stripe title="Contact" description="Questions, comments, or concerns? Connect wth us!"></Stripe>
             <div style={{marginTop: "3%", display: 'flex'}}>
                 <div style={{backgroundColor: 'white', height: '100px', flex: 1}}/>

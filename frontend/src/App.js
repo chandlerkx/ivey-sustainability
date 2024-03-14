@@ -12,13 +12,14 @@ import Footer from './components/Footer';
 import Past from './pages/Past'
 import './styles/App.css'
 import Header2 from './components/Header2';
+import './App.css'; // Import your CSS file with font styles
 
 
 
 function App() {
   return (
 
-    <div>
+    <div className="App">
 
       <Header2></Header2>
 
