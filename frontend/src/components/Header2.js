@@ -95,11 +95,11 @@ function Header2() {
           </IconButton>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             
-            <Button style={{fontSize: "20px", marginRight: "4%", color:'black'}} component={Link} to="/" color="inherit">Home</Button>
+            <Button style={{textTransform:'none',fontSize: "20px", marginRight: "4%", color:'black'}} component={Link} to="/" color="inherit">Home</Button>
             <DropdownMenu/>
-            <Button style={{fontSize: "20px", marginLeft: "4%", color:'black'}} component={Link} to="/ourteam" color="inherit">Our Team</Button>
-            <Button style={{fontSize: "20px",marginLeft: "4%",color:'black'}} component={Link} to="/media" color="inherit">Media</Button>
-            <Button style={{fontSize: "20px",marginLeft: "4%",color:'black'}} component={Link} to="/contact" color="inherit">Contact</Button>
+            <Button style={{textTransform:'none', fontSize: "20px", marginLeft: "4%", color:'black'}} component={Link} to="/ourteam" color="inherit">Our Team</Button>
+            <Button style={{textTransform:'none', fontSize: "20px",marginLeft: "4%",color:'black'}} component={Link} to="/media" color="inherit">Media</Button>
+            <Button style={{textTransform:'none', fontSize: "20px",marginLeft: "4%",color:'black'}} component={Link} to="/contact" color="inherit">Contact</Button>
 
           </Box>
 
