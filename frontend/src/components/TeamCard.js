@@ -11,8 +11,8 @@ export default function TeamCard({ imgFile, name, role, emailLink, linkedinLink,
                 onMouseLeave={() => setIsHovered(false)}
             >
                 <div style={{paddingRight:'3rem', position:'relative', textAlign:'center'}}>
-                    <img src={imgFile} alt={name} style={{width:'100%', height:'auto', filter: isHovered ? 'blur(5px)' : 'none', transition: 'filter 0.05s'}}></img>
-                    </div>
+                    <img src={imgFile} alt={name} style={{width:'100%', height:'auto', filter: isHovered ? 'blur(5px)' : 'none', transition: 'filter 0.1s'}}></img>
+                </div>
                     {isHovered && (
                         <div style={{position: 'absolute',
                         transform: 'translate(30%, -130%)',
@@ -29,8 +29,8 @@ export default function TeamCard({ imgFile, name, role, emailLink, linkedinLink,
                 </div>
             </div>
                 <div style={{}}>
-                    <p style={{ fontWeight: 'bold', fontSize: '2rem', fontFamily: 'Arial', color: '#104702', paddingTop: '10%' }}>{name}</p>
-                    <p style={{ fontWeight: '700', lineHeight: '0', fontSize: '1.6rem', fontFamily: 'Arial', color: '#374A1D', paddingTop: '9%' }}>{role}</p>
+                    <p style={{ fontWeight: 'bold', fontSize: '2rem',color: '#104702', paddingTop: '10%' }}>{name}</p>
+                    <p style={{ fontWeight: '700', lineHeight: '0', fontSize: '1.6rem', color: '#374A1D', paddingTop: '9%' }}>{role}</p>
                     
                 </div>
                 
