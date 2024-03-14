@@ -25,7 +25,7 @@ const DropdownMenu = () => {
     return (
         <div className="dropdown-menu" onMouseLeave={handleMouseLeave}>
             <Button style={{color:'black'}} color="inherit" onMouseEnter={handleMouseEnter}>
-                <Link to="/upcoming" style={{textDecoration:'none', color:'black'}}>Events</Link>
+                <Link to="/upcoming" style={{fontSize: "20px",textDecoration:'none', color:'black'}}>Events</Link>
             </Button>
             {isDropdownVisible && (
                 <div

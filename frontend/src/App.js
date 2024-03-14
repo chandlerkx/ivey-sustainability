@@ -11,6 +11,7 @@ import { BottomNavigation } from '@mui/material';
 import Footer from './components/Footer';
 import Past from './pages/Past'
 import './styles/App.css'
+import Header2 from './components/Header2';
 
 
 
@@ -19,7 +20,7 @@ function App() {
 
     <div>
 
-      <Header></Header>
+      <Header2></Header2>
 
       <Routes>
         <Route index element={<Home />} />
