@@ -27,7 +27,7 @@ const OurTeam = () => {
                         role="Co-President" 
                         emailLink="https://mail.google.com/mail/u/0/" 
                         linkedinLink="https://www.linkedin.com/"
-                        description="hello my name is __ and im studying __ at western university i am enjoying my time here pleas work box "
+                        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
                     />
                     <TeamCard 
                         imgFile='/images/Shrinjal.png'
@@ -35,7 +35,7 @@ const OurTeam = () => {
                         role="VP Marketing" 
                         emailLink="https://mail.google.com/mail/u/0/" 
                         linkedinLink="https://www.linkedin.com/"
-                        description="hi guys my name jeff"
+                        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
                     />
                     <TeamCard 
                         imgFile='/images/Megan.png'
@@ -43,7 +43,7 @@ const OurTeam = () => {
                         role="VP Finance" 
                         emailLink="https://mail.google.com/mail/u/0/" 
                         linkedinLink="https://www.linkedin.com/"
-                        description=""
+                        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
                     />
                 </div>
 
@@ -55,7 +55,7 @@ const OurTeam = () => {
                         role="VP Events" 
                         emailLink="https://mail.google.com/mail/u/0/" 
                         linkedinLink="https://www.linkedin.com/"
-                        description=""
+                        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
                     />
                     <TeamCard 
                         imgFile='/images/Cheryl.png'
@@ -63,7 +63,7 @@ const OurTeam = () => {
                         role="VP Partnerships" 
                         emailLink="https://mail.google.com/mail/u/0/" 
                         linkedinLink="https://www.linkedin.com/"
-                        description=""
+                        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
                     />
                     <TeamCard 
                         imgFile='/images/Henry.png'
@@ -71,7 +71,7 @@ const OurTeam = () => {
                         role="VP Education" 
                         emailLink="https://mail.google.com/mail/u/0/" 
                         linkedinLink="https://www.linkedin.com/"
-                        description=""
+                        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
                     />
 
 
