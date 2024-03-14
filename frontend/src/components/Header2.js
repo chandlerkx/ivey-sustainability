@@ -93,7 +93,7 @@ function Header2() {
           <IconButton edge="start" component={Link} to="/" color="inherit" aria-label="menu" sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }}>
             <img style={{}}src='../images/Logo.png' ></img>
           </IconButton>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: "flex-end"} }}>
             
             <Button style={{fontSize: "20px", marginRight: "4%", color:'black'}} component={Link} to="/" color="inherit">Home</Button>
             <DropdownMenu/>
