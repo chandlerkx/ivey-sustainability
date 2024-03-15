@@ -30,10 +30,10 @@ const DropdownMenu = () => {
             {isDropdownVisible && (
                 <div
                     onMouseEnter={handleSubMenuMouseEnter}
-                    style={{ position: "absolute", backgroundColor: "white"}}
+                    style={{ position:'absolute', backgroundColor: "white"}}
                 >
-                    <ul style={{ listStyle: "none", padding: "1rem"}}>
-                        <li style={{paddingBottom:'1rem'}}>
+                    <ul style={{ listStyle: "none", padding: "1rem", maxHeight:'2.4rem'}}>
+                        <li style={{paddingBottom:'0.5rem'}}>
                             <Link style={{textDecoration:'none',color:'black'}} to="/upcoming">Upcoming</Link>
                         </li>
                         <li>
