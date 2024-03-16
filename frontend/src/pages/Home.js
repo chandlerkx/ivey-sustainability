@@ -1,6 +1,5 @@
 import React from 'react';
 import Button from "@mui/material/Button";
-import Stripe from '../components/Stripe';
 import HomeBanner from '../components/HomeBanner';
 // import { Routes, Route, Link } from 'react-router-dom';
 
@@ -18,7 +17,7 @@ const Home = () => {
                     <p style={{fontSize: '1.78rem', paddingTop:'2rem'}}>Helping students realize how sustainability converges with all facets of business. Our hope is to support members as they launch their business careers and arm them with the knowledge necessary to become leaders designed to create positive social and environmental impact.</p>
                     <br/>
                     <p style={{lineHeight:'0', fontSize: '32px', fontWeight: 'bold', paddingTop:'5rem'}}>Interested in getting involved?</p>
-                    <a href="https://docs.google.com" target='_blank'>
+                    <a href="https://docs.google.com" target='_blank' rel="noreferrer">
                         <Button style={{ color: 'white', backgroundColor: '#51694B',borderRadius:'0.5rem', padding:'2rem', fontSize:'1.1rem', paddingTop:'0.6rem', paddingBottom:'0.6rem', marginTop:'2.5rem'}}>Inquire about the club</Button>
                     </a>
                 </div>
@@ -26,7 +25,7 @@ const Home = () => {
 
                 </div>
                 <div style={{flex: 8}}>
-                    <img  style={{maxWidth: '100%', height: '80%'}} src="../images/homebackground.png" />
+                    <img  alt="" style={{maxWidth: '100%', height: '80%'}} src="../images/homebackground.png" />
                 </div>
             </div>
         </div>

@@ -17,7 +17,7 @@ const Media = () => {
                     <Button size="large" style={{textTransform:"none", color: 'white', backgroundColor: '#51694B',fontSize:"1.2rem", fontFamily:"Nunito Sans", borderRadius:"0.4rem", paddingLeft:"2rem", paddingRight:"2rem"}}>Read Our Blog</Button>
                 </div>
                 <div className="image-container">
-                    <img src="testimage3.jpg"></img>
+                    <img src="testimage3.jpg" alt=""></img>
                 </div>
             </div>
 
@@ -29,7 +29,7 @@ const Media = () => {
                     <Button size="large" style={{textTransform:"none", color:'black', backgroundColor: 'white',fontSize:"1.2rem", fontFamily:"Nunito Sans", borderRadius:"0.4rem", paddingLeft:"2rem", paddingRight:"2rem"}}>Listen To Our Podcast</Button>
                 </div>
                 <div className="dark-image-container">
-                    <img src="testimage3.jpg"></img>
+                    <img src="testimage3.jpg" alt=""></img>
                 </div>
             </div>
 

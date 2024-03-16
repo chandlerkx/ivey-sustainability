@@ -2,7 +2,6 @@ import { Button } from '@mui/material';
 import Stripe from '../components/Stripe'
 import TeamCard from '../components/TeamCard'
 import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
 
 const OurTeam = () => {
     return (
