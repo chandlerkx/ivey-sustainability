@@ -11,7 +11,7 @@ export default function TeamCard({ imgFile, name, role, emailLink, linkedinLink,
                 onMouseLeave={() => setIsHovered(false)}
             >
                 <div style={{paddingRight:'3rem', position:'relative', textAlign:'center'}}>
-                    <img src={imgFile} alt={name} style={{width:'100%', height:'auto', filter: isHovered ? 'blur(5px)' : 'none', transition: 'filter 0.1s'}}></img>
+                    <img src={imgFile} alt={name} style={{borderRadius: '8px', width:'100%', height:'auto', filter: isHovered ? 'blur(5px)' : 'none', transition: 'filter 0.1s'}}></img>
                 </div>
                     {isHovered && (
                         <div style={{position: 'absolute',

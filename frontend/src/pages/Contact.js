@@ -1,7 +1,7 @@
 import React from "react";
 import Stripe from "../components/Stripe";
 import InputField from "../InputField";
-import { TextField } from "@mui/material";
+import { IconButton, TextField, Link } from "@mui/material";
 import Button from "@mui/material/Button";
 import { Email , Place} from "@mui/icons-material"
 
@@ -39,8 +39,11 @@ const Contact = () => {
             </div>
                 <div style={{marginLeft: "100px", height: "400px", width: "800px", backgroundColor: 'white'}}> 
                     <div style={{marginLeft: "0.6%", display: 'inline-flex'}}>
-                        <Email style={{fontSize: "3em", marginRight: "1.41%"}}></Email>
+                        <Link component="a" href="mailto:example@example.com" target="_blank" rel="noopener noreferrer" style={{ marginRight: "1.41%" }}>
+                            <Email style={{ fontSize: "3em" }} />
+                        </Link>
                         <p style={{marginLeft: "3%", fontSize: "2em"}}>mscsustainabilityclub@gmail.com</p>
+                        
                     </div>
                     <div style={{ display: 'inline-flex', marginTop: "2.5%"}}>
                         <Place style={{paddingTop: "2%", fontSize: "3.5em"}}></Place>

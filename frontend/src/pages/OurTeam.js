@@ -9,6 +9,10 @@ const OurTeam = () => {
             
             <Stripe title="Our Team" description="Meet the 2023/2024 Ivey MSc Sustainability Club Executive Team!"></Stripe>
 
+            <div>
+                <Typography></Typography>
+            </div>
+
             {/* container 1 */}
             <div> 
 

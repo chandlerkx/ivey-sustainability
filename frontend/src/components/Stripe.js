@@ -22,7 +22,7 @@ export default function Stripe({title, description}){
     fontSize: '24px',
     color: 'black',
     fontFamily: 'Nunito Sans, sans-serif',
-    display: {xs: 'none', md: 'flex'} // Set the font family
+    display: {xs: 'flex', md: 'flex'}
   }}>{description}</Typography>
             </div>
         </div>
