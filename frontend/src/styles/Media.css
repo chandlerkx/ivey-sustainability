@@ -137,7 +137,7 @@
     /* first container */ 
     .section {
         display: block;
-        background-color: red;
+        background-color: white;
     }
     
     .content {
@@ -169,7 +169,7 @@
     }
     
     .image-container img {
-        width: 87.7%;
+        width: 90%;
         height: 100%;
         align-items: center;
         justify-content: center;
@@ -177,8 +177,9 @@
     
     /* second container */ 
     .dark-section {
+        padding-top:0.2rem;
         background-color: #51694B;
-        display: flex;
+        display: block;
     }
     
     .dark-content{
@@ -189,19 +190,18 @@
     }
     
     .dark-content h1 {
-        font-size: 3.5rem;
+        font-size: 1.7rem;
         color: white;
         font-weight: bold;
     }
     
     .dark-content p {
-        color: white;
-        flex-direction:column;
-        margin-top:3%;
-        margin-bottom:3%;
-        max-width:50rem;
-        font-size:1.75rem;
-        font-weight:600;
+        color:white;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        max-width: 50rem;
+        font-size: 1.5rem;
+        font-weight: 600;
     }
     
     .dark-image-container {
@@ -211,6 +211,7 @@
         margin-top:3.5%;
         margin-left:3%;
         margin-bottom:3.5%;
+        padding-bottom:1.3rem;
     }
     
     .dark-image-container img {
@@ -227,10 +228,11 @@
         margin-left: 2.3%;
         color: #104702;
         margin-top:2.5%;
+        font-size:1.6rem;
     }
     
     .social-items-container{
-        display:flex;
+        display:block;
         flex-direction:row;
         justify-content:space-around;
         padding-top:3%;
