@@ -25,11 +25,11 @@ export default function EventCard({imgFile, title, date, description}){
             <div style={{flex: 0.25, backgroundColor: 'white'}}>
             </div>
             <div style={{flex: 5, marginRight: '35px', backgroundColor: 'white'}}>
-                <p style={{overflow: 'clip', backgroundColor: 'white', fontSize: '32px', fontWeight: 'bold', lineHeight: '32px',paddingTop:'3%'}}>{title}</p>
-                <p style={{fontSize: '1.4rem', lineHeight: '0px', paddingTop:'2%'}}>{date}</p>
+                <p style={{color:'#104702', overflow: 'clip', backgroundColor: 'white', fontSize: '32px', fontWeight: 'bold', lineHeight: '32px',paddingTop:'3%'}}>{title}</p>
+                <p style={{color:'#542D2D', fontSize: '1.4rem', lineHeight: '0px', paddingTop:'2%'}}>{date}</p>
                 <p style={{fontSize: '1.8rem', lineHeight: '26px', paddingTop:'3.5%'}}>{description}</p>
                 <a href="https://docs.google.com" target='_blank'>
-                <Button style={{textTransform:'none',color: 'white', backgroundColor: '#51694B', marginTop:'3.5%',paddingLeft:'1.3rem', paddingRight:'1.3rem', borderRadius:'0.3rem',fontSize:'1rem'}}>Register Here ➤</Button>
+                <Button style={{boxShadow:'0px 4px 8px rgba(0, 0, 0, 0.4,)', textTransform:'none',color: 'white', backgroundColor: '#51694B', marginTop:'3.5%',paddingLeft:'1.3rem', paddingRight:'1.3rem', borderRadius:'0.3rem',fontSize:'1rem'}}>Register Here ➤</Button>
                 </a>
             </div>
         </div>

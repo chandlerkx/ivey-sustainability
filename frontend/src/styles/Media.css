@@ -217,8 +217,7 @@
     .dark-image-container img {
         width:87.7%;
         height:100%;
-        align-items:center;
-        justify-content:center;
+        margin:0 auto;
     }
     
     /* third container */ 
@@ -233,13 +232,14 @@
     
     .social-items-container{
         display:block;
-        flex-direction:row;
-        justify-content:space-around;
+        justify-content:center;
         padding-top:3%;
+        margin:0 auto;
+        width:80%;
     }
     
     .social-display-container-one{
-        display:flex;
+        display:block;
     }
     
     .social-container-one h2 {

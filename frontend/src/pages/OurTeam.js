@@ -87,10 +87,10 @@ const OurTeam = () => {
             {/* containerr 2*/}
             <div>
                 <div style={{backgroundColor:'white', display:'flex', flexDirection:'column',justifyContent:'center', alignItems:'center', padding:'4rem', paddingTop:'4rem'}}>
-                    <Typography sx={{display:{xs:'none', md:'inline-block'},color:'black',fontWeight:'bold', fontSize:{xs:'0.7rem',md:'1.9rem'}, lineHeight:'0', paddingBottom:'1rem', paddingTop:'3rem'}}>Embark on our mission towards sustainability.</Typography>
+                    <Typography sx={{display:{xs:'none', md:'inline-block'},color:'black',fontWeight:'0' , fontSize:{xs:'0.7rem',md:'1.9rem'}, lineHeight:'0', paddingBottom:'1rem', paddingTop:'3rem'}}>Embark on our mission towards sustainability.</Typography>
                     <a href="https://docs.google.com/forms/u/0/" target="_blank" rel="noreferrer">
-                        <Button sx={{display:{xs:'none', md:'inline-block'}, textTransform:'none',  backgroundColor:'#51694B', color:'white', borderRadius:'0.5rem', padding:{xs:'0.3rem 4rem',md:'0.6rem 4.5rem'}, fontSize:{xs:'0.6rem',md:'1.3rem'}, marginTop:{xs:'1rem',md:'1.5rem'},'&:hover': {backgroundColor: '#51694B'}}}>Subscribe to our newsletter</Button>
-                        <Button sx={{display:{xs:'inline-block',md:'none'}, textTransform:'none', padding:'0.5rem 3rem', backgroundColor:'#51694b', color:'white', borderRadius:'0.5rem','&:hover': {backgroundColor: '#51694B'}}}>Subscribe</Button>
+                        <Button sx={{display:{xs:'none', md:'inline-block'}, fontWeight:'0', textTransform:'none',  backgroundColor:'#51694B', color:'white', borderRadius:'0.5rem', padding:{xs:'0.3rem 4rem',md:'0.6rem 4.5rem'}, fontSize:{xs:'0.6rem',md:'1.3rem'}, marginTop:{xs:'1rem',md:'1.5rem'},'&:hover': {backgroundColor: '#51694B'}}}>Subscribe to our newsletter</Button>
+                        <Button sx={{display:{xs:'inline-block',md:'none'}, textTransform:'none', padding:'0.5rem 3rem', backgroundColor:'#51694b', color:'white', borderRadius:'0.5rem','&:hover': {backgroundColor: '#51694B'}, fontSize:'1.2rem'}}>Subscribe</Button>
                     </a>
                 </div>
             </div> 
