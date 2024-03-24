@@ -1,7 +1,7 @@
 import React from "react";
 import Stripe from "../components/Stripe";
 import InputField from "../InputField";
-import { IconButton, TextField, Link } from "@mui/material";
+import { IconButton, TextField, Link, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import { Email , Place} from "@mui/icons-material"
 

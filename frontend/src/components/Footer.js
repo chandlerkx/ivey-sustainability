@@ -6,8 +6,8 @@ function Footer() {
   const iconStyle = { color: 'black', fontSize: '3.4em' };
 
   return (
-    <div>
-      <Container maxWidth="100%" sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex', justifyContent: "flex-end"} }} style={{ backgroundColor: 'transparent', textAlign: 'right' }}>
+    <div style={{ backgroundColor: 'transparent' }}>
+      <Container maxWidth="80%" sx={{ backgroundColor: 'transparent', textAlign: 'right', width: '100%' }}>
         <Grid container spacing={1} justifyContent={'flex-end'}>
 
           <Grid item xs={1.3} md={1} style={{ backgroundColor: 'transparent', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
