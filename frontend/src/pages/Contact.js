@@ -42,7 +42,7 @@ const Contact = () => {
                         <Link component="a" href="mailto:example@example.com" target="_blank" rel="noopener noreferrer" style={{ marginRight: "1.41%" }}>
                             <Email style={{ fontSize: "3em" }} />
                         </Link>
-                        <p style={{marginLeft: "3%", fontSize: "2em"}}>mscsustainabilityclub@gmail.com</p>
+                        <Typography style={{marginLeft: "3%", fontSize: "2em"}}>mscsustainabilityclub@gmail.com</Typography>
                         
                     </div>
                     <div style={{ display: 'inline-flex', marginTop: "2.5%"}}>
