@@ -8,31 +8,47 @@ import AppBar from "@mui/material/AppBar";
 import IconButton from "@mui/material/IconButton";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import AdbIcon from '@mui/icons-material/Adb';
+import { Grid, Typography, useMediaQuery} from '@mui/material';
+import { useTheme } from '@mui/material/styles';
+
+
 
 export default function EventCard({imgFile, title, date, description}){
-    
-    
-    return(
-        <div style={{display: 'flex', marginTop: '4%'}}>
-            <div style={{flex:0.25, backgroundColor: 'white'}}>
+    const theme = useTheme();
 
-            </div>
-            <div style={{flex: 3}}>
-                <img style={{ width: '100%', height: '100%' }} src={imgFile}></img>
-            </div>
-            <div style={{flex: 0.25, backgroundColor: 'white'}}>
-            </div>
-            <div style={{flex: 5, marginRight: '35px', backgroundColor: 'white'}}>
-                <p style={{color:'#104702', overflow: 'clip', backgroundColor: 'white', fontSize: '32px', fontWeight: 'bold', lineHeight: '32px',paddingTop:'3%'}}>{title}</p>
-                <p style={{color:'#542D2D', fontSize: '1.4rem', lineHeight: '0px', paddingTop:'2%'}}>{date}</p>
-                <p style={{fontSize: '1.8rem', lineHeight: '26px', paddingTop:'3.5%'}}>{description}</p>
-                <a href="https://docs.google.com" target='_blank'>
-                <Button style={{boxShadow:'0px 4px 8px rgba(0, 0, 0, 0.4,)', textTransform:'none',color: 'white', backgroundColor: '#51694B', marginTop:'3.5%',paddingLeft:'1.3rem', paddingRight:'1.3rem', borderRadius:'0.3rem',fontSize:'1rem'}}>Register Here ➤</Button>
-                </a>
-            </div>
-        </div>
-    )
+    
+    return (
+        <Grid container justifyContent={theme.breakpoints.down('xs') ? 'center' : 'flex-start'} spacing={2} alignItems="center" sx={{ marginTop: '4%', marginBottom: {
+            xs: '15%',
+            sm: '15%',
+            md: '0%',
+            lg: '0%',
+            xl: '0%',
+          },}} >
+        <Grid item xs={false} md={0.4} style={{ backgroundColor: 'transparent' }} />
+          <Grid item xs={10} md={4} style={{ backgroundColor: 'transparent' }}>
+            <img style={{  width: '100%', height: '100%' }} src={imgFile} alt="Image" />
+          </Grid>
+          <Grid item xs={12} md={0.4} style={{ backgroundColor: 'transparent' }}>
+            <div style={{ backgroundColor: 'white', height: '100%' }}></div>
+          </Grid>
+          <Grid item xs={12} md={6.8} sx={{
+      marginRight: '35px',
+      backgroundColor: 'transparent',
+      marginLeft: {xs: '7%', md: 0},
+      justifyContent: { xs: 'center', md: 'flex-start' },
+      alignItems: { xs: 'center', md: 'flex-start' }
+    }}>
+
+            <Typography style={{ color: '#104702', fontSize: '32px', fontWeight: 'bold', lineHeight: '32px', paddingTop: '3%' }}>{title}</Typography>
+            <Typography style={{ color: '#542D2D', fontSize: '1.4rem', lineHeight: '0px', paddingTop: '2%' }}>{date}</Typography>
+            <Typography style={{ fontSize: '1.8rem', lineHeight: '26px', paddingTop: '3.5%' }}>{description}</Typography>
+            <a href="https://docs.google.com" target='_blank' rel="noopener noreferrer">
+              <Button variant="contained" style={{ textTransform: 'none', color: 'white', backgroundColor: '#51694B', marginTop: '3.5%', borderRadius: '0.3rem', fontSize: '1rem' }}>Register Here ➤</Button>
+            </a>
+          </Grid>
+        </Grid>
+      );
     
 }
