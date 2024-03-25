@@ -11,6 +11,8 @@ import MenuItem from '@mui/material/MenuItem';
 import {Link } from 'react-router-dom';
 import DropdownMenu from './DropdownMenu';
 import backgroundImage from './Tree.jpeg'; 
+import { useLocation } from 'react-router-dom';
+
 
 
 const pages = ['Events', 'Our Team', 'Media', 'Contact'];
@@ -19,6 +21,10 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 function Header2() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  //variable to set up bold header 
+  const location = useLocation();
+  const currentPath = location.pathname;
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -91,11 +97,11 @@ function Header2() {
           </IconButton>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: "flex-end"} }}>
             
-            <Button style={{textTransform:'none',fontSize: "20px", marginRight: "4%", color:'black'}} component={Link} to="/" color="inherit">Home</Button>
+            <Button style={{textTransform:'none',fontSize: "20px", marginRight: "4%", color:'black', fontWeight: currentPath === '/' ? 'bold' : 'normal'}} component={Link} to="/" color="inherit">Home</Button>
             <DropdownMenu/>
-            <Button style={{textTransform:'none', fontSize: "20px",marginLeft: "4%",color:'black'}} component={Link} to="/ourteam" color="inherit">Our Team</Button>
-            <Button style={{textTransform:'none', fontSize: "20px",marginLeft: "4%",color:'black'}} component={Link} to="/media" color="inherit">Media</Button>
-            <Button style={{textTransform:'none', fontSize: "20px",marginLeft: "4%",color:'black'}} component={Link} to="/contact" color="inherit">Contact</Button>
+            <Button style={{textTransform:'none', fontSize: "20px",marginLeft: "4%",color:'black', fontWeight: currentPath === '/ourteam' ? 'bold' : 'normal'}} component={Link} to="/ourteam" color="inherit">Our Team</Button>
+            <Button style={{textTransform:'none', fontSize: "20px",marginLeft: "4%",color:'black', fontWeight: currentPath === '/media' ? 'bold' : 'normal'}} component={Link} to="/media" color="inherit">Media</Button>
+            <Button style={{textTransform:'none', fontSize: "20px",marginLeft: "4%",color:'black', fontWeight: currentPath === '/contact' ? 'bold' : 'normal'}} component={Link} to="/contact" color="inherit">Contact</Button>
 
           </Box>
 

@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
+import { useLocation } from 'react-router-dom';
 
 const DropdownMenu = () => {
     const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -22,11 +23,15 @@ const DropdownMenu = () => {
         clearTimeout(dropdownTimeoutRef.current);
     };
 
+    //variable to set up bold header 
+    const location = useLocation();
+    const currentPath = location.pathname;
+
     return (
         <div className="dropdown-menu" onMouseLeave={handleMouseLeave}>
-            <Button style={{color:'black'}} color="inherit" onMouseEnter={handleMouseEnter}>
-                <Link to="/upcoming" style={{textTransform:'none', fontSize: "20px",textDecoration:'none',fontWeight:'bold',color:'black'}}>Events</Link>
-            </Button>
+            <div style={{color:'black'}} color="inherit" onMouseEnter={handleMouseEnter}>
+                <Button style={{textTransform:'none', fontSize: "20px",marginLeft: "4%",color:'black', fontWeight: currentPath === '/upcoming' || currentPath === '/past' ? 'bold' : 'normal'}} component={Link} to="/upcoming" color="inherit">Events</Button>
+            </div>
             {isDropdownVisible && (
                 <div
                     onMouseEnter={handleSubMenuMouseEnter}
