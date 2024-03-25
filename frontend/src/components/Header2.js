@@ -13,11 +13,6 @@ import DropdownMenu from './DropdownMenu';
 import backgroundImage from './Tree.jpeg'; 
 import { useLocation } from 'react-router-dom';
 
-
-
-const pages = ['Events', 'Our Team', 'Media', 'Contact'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-
 function Header2() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -28,9 +23,6 @@ function Header2() {
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
@@ -50,7 +42,7 @@ function Header2() {
         <Toolbar disableGutters>
           
           <IconButton edge="start" color="inherit" component={Link} to="/" aria-label="menu" sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}>
-            <img style={{}}src='../images/Logo.png' ></img>
+            <img style={{}}src='../images/Logo.png' alt='prop'></img>
           </IconButton>
           {/* <Box sx={{ flexGrow: 5, display: { xs: 'none', md: 'flex' } }}></Box> */}
 
@@ -93,7 +85,7 @@ function Header2() {
             </Menu>
           </Box>
           <IconButton edge="start" component={Link} to="/" color="inherit" aria-label="menu" sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }}>
-            <img style={{}}src='../images/Logo.png' ></img>
+            <img style={{}}src='../images/Logo.png' alt='prop'></img>
           </IconButton>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: "flex-end"} }}>
             
