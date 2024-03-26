@@ -39,8 +39,8 @@ const Media = () => {
                 
                 <div className="social-items-container">
 
-                    <div className="social-display-container-one">
-                        <div className="social-container-one">
+                <div className="social-display-container-two">
+                        <div>
                             <h2>Instagram</h2>
                             <div style={{backgroundColor:"lightgray", width:"25rem", height:"40rem"}}></div> {/* temp placeholder gray div */}
                             <Button size="large" style={{margin:"0 auto", display:"block", marginTop:"8%",textTransform:"none", color: 'white', backgroundColor: '#51694B',fontSize:"1rem", fontFamily:"Nunito Sans", borderRadius:"0.4rem", paddingLeft:"2rem", paddingRight:"2rem", marginBottom:"10%"}}>Follow Us</Button>
