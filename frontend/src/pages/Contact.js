@@ -1,72 +1,139 @@
 import React from "react";
 import Stripe from "../components/Stripe";
 import InputField from "../InputField";
-import { IconButton, TextField, Link, Typography } from "@mui/material";
+import { IconButton, TextField, Link, Typography, Grid } from "@mui/material";
 import Button from "@mui/material/Button";
 import { Email , Place} from "@mui/icons-material"
 
 
 const Contact = () => {
     return (
-        <div>
-            <div style={{height: '0px', backgroundColor: 'white'}}/>
-            <Stripe title="Contact" description="Questions, comments, or concerns? Connect wth us!"></Stripe>
-            <div style={{marginTop: "3%", display: 'flex'}}>
-                <div style={{backgroundColor: 'white', height: '100px', flex: 1}}/>
-                <div style={{marginTop: "2%", backgroundColor: 'white',height: '37.5rem', flex: 6}}> {/*text & fields*/}
-                    <p style={{fontSize: "2.3rem", fontWeight: "bolder", color: "#104702",marginBottom:'2%'}}>Get in Touch</p>
-                    <div style={{marginTop: "3.5%", marginBottom: "1%", backgroundcolor: 'white', display: 'inline-flex', justifyContent: 'space-between'}}>
-
-                        <div style={{ position: "relative" }}>
-                            <label style={{ position: "absolute", top: -30, left: 0 , fontWeight:'bold', fontSize:'1.15rem'}}>First Name</label>
-                            <TextField id="standard-helperText" placeholder="First name" variant="outlined" />
-                        </div>
-
-                        <div style={{width: '6.25rem'}}></div>
-
-                        <div style={{ position: "relative" }}>
-                            <label style={{ position: "absolute", top: -30, left: 0 , fontWeight:'bold', fontSize:'1.15rem'}}>Last Name</label>
-                            <TextField id="standard-helperText" placeholder="Last name" variant="outlined" />
-                        </div>
-
-                    </div>
-
-                    <div style={{ position: "relative", marginTop: "4%", width: "51.1%"}}>
-                        <label style={{ position: "absolute", top: -30, left: 0 , fontWeight:'bold', fontSize:'1.15rem'}}>Email</label>
-                        <TextField id="standard-helperText" fullWidth placeholder="address@company.com" variant="outlined" />
-                    </div>
-
-                    <div style={{ position: "relative", marginTop: "5%",width: "51.1%"}}>
-                        <label style={{ position: "absolute", top: -30, left: 0 , fontWeight:'bold', fontSize:'1.15rem'}}>Phone Number</label>
-                        <TextField id="standard-helperText" fullWidth placeholder="+1 (555) 000-0000" variant="outlined" />
-                    </div>
-
-                    <div style={{ position: "relative", marginTop: "5%", marginBottom:"3%", width:"53.1%"}}>
-                        <label style={{ position: "absolute", top: -30, left: 0 , fontWeight:'bold', fontSize:'1.15rem'}}>Message</label>
-                        <TextField id="standard-helperText" fullWidth placeholder="Leave us a Message..." variant="outlined" multiline rows={5} rowsMax={5}/>
-                    </div>
-
-                    <Button size="large" sx={{marginTop:{xs:'1rem'},width: "350px", height: "60px", color: '#EEEEEE', backgroundColor: '#51694B', borderRadius:'0.6rem', textTransform:'none', fontSize:'1.2rem','&:hover': {backgroundColor: '#51694B'}}}>Send Message</Button>
-                </div>
-
-                <div style={{backgroundColor: 'white',height: '300px', flex: 2}}></div>
-
+        <Grid container spacing={0}>
+        <Grid item xs={12}>
+          <div style={{ height: '0px', backgroundColor: 'white' }} />
+        </Grid>
+        <Grid item xs={12}>
+          <Stripe title="Contact" description="Questions, comments, or concerns? Connect wth us!" />
+        </Grid>
+        
+          <Grid container spacing={0}>
+            <Grid item xs={3} md={4.5} sx={{ backgroundColor: 'white', height: '100px' }} />
+              <Grid container spacing={2} sx={{ backgroundColor: 'white', height: '37.5rem', width: '55vw', mt: 2 }}>
+                <Grid container>
+                <Grid item xs={12}>
+                  <Typography variant="h4" sx={{marginTop: '3rem', fontWeight: 'bolder', color: '#104702', mb: 2 }}>
+                    Get in Touch
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                  <Grid container spacing={2}>
+                    <Grid item xs={12}>
+                      <Grid container spacing={1}>
+                        <Grid item xs={6}>
+                          <TextField
+                            id="firstName"
+                            label="First Name"
+                            variant="outlined"
+                            fullWidth
+                            required
+                          />
+                        </Grid>
+                        <Grid item xs={6}>
+                          <TextField
+                            id="lastName"
+                            label="Last Name"
+                            variant="outlined"
+                            fullWidth
+                            required
+                          />
+                        </Grid>
+                      </Grid>
+                    </Grid>
+                    <Grid item xs={12}>
+                      <TextField
+                        id="email"
+                        label="Email"
+                        variant="outlined"
+                        fullWidth
+                        required
+                      />
+                    </Grid>
+                    <Grid item xs={12}>
+                      <TextField
+                        id="phoneNumber"
+                        label="Phone Number"
+                        variant="outlined"
+                        fullWidth
+                        required
+                      />
+                    </Grid>
+                    <Grid item xs={12}>
+                      <TextField
+                        id="message"
+                        label="Message"
+                        variant="outlined"
+                        fullWidth
+                        multiline
+                        rows={5}
+                        required
+                      />
+                    </Grid>
+                  </Grid>
+                </Grid>
+                </Grid>
+                <Grid container justifyContent={'center'} width={'50%'} sx={{backgroundColor: 'white'}}> 
+                  <Button
+                    variant="contained"
+                    size="large"
+                    sx={{
+                      mt: { xs: 1 },
+                      mb: 2,
+                      width: {xs: '150px', md: '350px'},
+                      height: '60px',
+                      color: '#EEEEEE',
+                      backgroundColor: '#51694B',
+                      borderRadius: '0.6rem',
+                      textTransform: 'none',
+                      fontSize: '1.2rem',
+                      '&:hover': { backgroundColor: '#51694B' },
+                    }}
+                  >
+                    Send Message
+                  </Button>
+                  </Grid>
+              </Grid>
+            <Grid item xs={6} sx={{ backgroundColor: 'white', height: '2rem' }} />
+          </Grid>
+        <Grid item xs={12}>
+          <Grid container spacing={0}>
+            <Grid item xs={2} md={4} sx={{backgroundColor: 'white'}}/>
+            <Grid item xs={8} sx={{backgroundColor: 'white'}}>
+              <div style={{ marginLeft: "0%", height: "40vw", maxWidth: "50rem", backgroundColor: 'white', paddingTop: '3rem' }}>
+                <Grid container spacing={2}>
+                  <Grid item xs={2}>
+                    <Email sx={{ fontSize: '3em'}} />
+                  </Grid>
+                  <Grid item xs={10}>
+                    <Typography sx={{ marginLeft: "3%", fontSize: { xs: '1.4rem', md: '1.8rem' } }}>
+                      mscsustainabilityclub@gmail.com
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={2}>
+                    <Place style={{ paddingTop: "2%", fontSize: "3.5em" }} />
+                  </Grid>
+                  <Grid item xs={10}>
+                  <Typography sx={{ width: "110%", marginLeft: {xs: "3%", md: "3%"}, fontSize: { xs: '1.3rem', md: '1.7rem' } }}>
+                    Ivey MSc Sustainability Club<br />
+                    1255 Western Rd, London, ON, <br />
+                    N6G 0N1, Canada
+                  </Typography>
+                </Grid>
+              </Grid>
             </div>
-            
-                <div style={{marginLeft: "10vw", height: "40vw", maxWidth: "50rem", backgroundColor: 'white', paddingTop:'6rem'}}> 
-                    <div style={{marginLeft: "0.6%", display: 'inline-flex'}}>
-                        <Link component="a" href="mailto:example@example.com" target="_blank" rel="noopener noreferrer" style={{ marginRight: "1.41%" }}>
-                            <Email sx={{ fontSize:'3em' }} />
-                        </Link>
-                        <Typography sx={{marginLeft: "3%", fontSize:{xs:'1.4rem', md:'1.8rem'}}}>mscsustainabilityclub@gmail.com</Typography>
-                        
-                    </div>
-                    <div style={{ display: 'inline-flex', marginTop: "2.5%"}}>
-                        <Place style={{paddingTop: "2%", fontSize: "3.5em"}}></Place>
-                        <Typography sx={{marginLeft: "3%", fontSize:{xs:'1.3rem', md:'1.7rem'}}}>Ivey MSc Sustainability Club<br/>1255 Western Rd, London, ON, N6G 0N1, Canada</Typography>
-                    </div>
-                </div>
-        </div>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Grid>
     );
 };
 
